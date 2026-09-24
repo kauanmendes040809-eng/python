@@ -1,6 +1,15 @@
-n = 5
-soma = 1
-while n > 1:
-    soma = soma * n 
-    n = n - 1
-print(f"o fatorial de 5 é: {soma}")
+n = int(input("quantos termos vc quer mostra ? "))
+t1 = 0
+t2 = 1
+print ('~'*30)
+print('{} -> {}'.format(t1, t2))
+cont = 3
+while cont <= n:
+    t3 = t1 + t2
+    print('-> {}'.format(t3), end='')
+    t1 = t2
+    t2 = t3
+    cont += 1
+    print("fim")
+    
+
